@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900;1000&display=swap');
+
+body {
+    font-family: 'Nunito', sans-serif;
+    scrollbar-width: thin;
+    scrollbar-color: #6366f1 #f1f1f1;
+}
+
+.custom-card {
+    box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.15);
+    transition: box-shadow 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+
+.custom-card:hover {
+    transform: translateY(-8px);
+}
+
+.btn-scroll-to-top {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+}
+
+.swiper-container {
+    width: 100%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 440px;
+    height: 300px;
+}
+
+/* Adjust width for screens up to 767px (mobile) */
+@media (max-width: 767px) {
+    .swiper-slide {
+        width: 280px;
+    }
+}
+
+/* Adjust width for screens between 768px and 1024px (iPad) */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .swiper-slide {
+        width: 250px;
+    }
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #6366f1;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #f1f1f1;
+}
+
+
+.primarybg {
+    background-color: #f3f6ff !important;
+}
+
+.secondarybg {
+    background-color: #6366f1 !important;
+    color: whitesmoke !important;
+}
+
+.secondarybg:hover {
+    background-color: #4649fd !important;
+    color: whitesmoke !important;
+}
+
+#toggleIcon {
+    cursor: pointer;
+    transition: color 0.2s ease-out;
+}
+
+#landing-page {
+    padding: 10% 7% 10% 7%;
+}
+
+/* Add transition to navbar elements */
+#mainNavbar {
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.text-blue {
+    color: #6366f1 !important;
+}
+
+/* Custom CSS to change nav links color */
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link:focus {
+    color: #6366f1 !important;
+    transition: color 0.3s;
+}
+
+/* Custom CSS to change active nav link color */
+.navbar-nav .nav-link.active {
+    color: #6366f1 !important;
+}

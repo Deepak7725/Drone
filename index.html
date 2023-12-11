@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Light&DarkMode</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="styles.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="main.js"></script>
+
+</head>
+<!-- pt-xl-5 pt-md-3  pb-md-4 pb-3 pb-lg-5 -->
+
+<body class="">
+    <header id="mainHeader" class="bg-white sticky-top">
+        <nav id="mainNavbar" class="navbar navbar-expand-lg bg-white shadow-sm py-3 sticky-top">
+            <div class="container px-3">
+                <a class="navbar-brand" href="#">
+                    <h3 class="fw-bolder m-0">Pro<span class="text-blue">Drone</span></h3>
+                </a>
+                <i id="toggleIcon" class="bi bi-moon-stars ms-lg-4"></i>
+                <!-- <button class="navbar-toggler" type="button" >
+                    <span class="navbar-toggler-icon"></span>
+                </button> -->
+                <a href="" id="toggler" class="px-3 py-2 text-black d-lg-none" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="bi bi-list"></i>
+                </a>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                        <li class="nav-item px-2">
+                            <a class="nav-link fw-bolder text-black-50 active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item px-2">
+                            <a class="nav-link fw-bolder text-black-50" href="#">About</a>
+                        </li>
+                        <li class="nav-item px-2">
+                            <a class="nav-link fw-bolder text-black-50" href="#">Product</a>
+                        </li>
+                        <li class="nav-item px-2 dropdown ">
+                            <a class="nav-link fw-bolder dropdown-toggle text-black-50" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Options
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item fw-bolder text-black-50" href="#">Action</a></li>
+                                <li><a class="dropdown-item fw-bolder text-black-50" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item fw-bolder text-black-50" href="#">Something else here</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+
+                    <form class="d-flex" role="search">
+                        <button class="btn secondarybg" type="submit">Search</button>
+                    </form>
+                </div>
+
+            </div>
+        </nav>
+    </header>
+    <section id="landing-page" class="container-fluid primarybg pt-xl-5 pt-md-3 ">
+        <div class="row g-3">
+            <div class="col-md-5 my-auto">
+                <div class="text-md-start text-center">
+                    <h1 class="display-4 fw-bolder text-black mb-4">Keep your finances even more easily.</h1>
+                    <p class="mb-4 text-black-50" style="max-width: 30.5rem;">Here you can manage and monitor your
+                        finances much more
+                        conveniently
+                        with the
+                        help
+                        of the new application that we have created.
+                    </p>
+                    <a href="#" class="btn btn-lg secondarybg fs-6">
+                        Learn More
+                        <i class="ms-2 bi bi-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-1"></div>
+            <div class="col-md-6 overflow-hidden rounded">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide rounded" style="background-image: url(images/main.jpg);"></div>
+                        <div class="swiper-slide rounded" style="background-image: url(images/second.jpg);"></div>
+                        <div class="swiper-slide rounded" style="background-image: url(images/third.jpg);"></div>
+                        <div class="swiper-slide rounded" style="background-image: url(images/main.jpg);"></div>
+                        <div class="swiper-slide rounded" style="background-image: url(images/second.jpg);"></div>
+                        <div class="swiper-slide rounded" style="background-image: url(images/third.jpg);"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="video-section" class="container-fluid my-5 pt-xl-5 pt-lg-4 pt-md-3 pb-lg-5 pb-md-4 pb-3">
+        <h2 class="h1 mt-xl-3 mb-4 pb-3 text-center fw-bold">Why ProDrone?</h2>
+        <div id="inner-div" class="container primarybg mb-xl-3 py-4 rounded-3">
+            <div class="row g-3 p-lg-5 p-3">
+                <div class="col-md-5 my-auto">
+                    <div class="text-md-start text-center">
+                        <h2 class="display-6 fw-bolder mb-4 text-black">Shoot like a pro with our new easy to use
+                            ProDrone
+                            2.0</h2>
+                        <p class="mb-4 text-black-50" style="max-width: 30.5rem;">Featuring a 1-inch CMOS sensor
+                            that can shoot 4K/60fps videos and 20MP photos, ProDrone 2.0 grants filmmakers
+                            absolute creative freedom. It carefully optimizes user experience and intelligent
+                            features.
+                        </p>
+                        <a href="#" class="btn btn-lg secondarybg fs-6">
+                            Buy now
+                            <i class="ms-2 bi bi-cart4"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-1"></div>
+                <div class="col-md-6 my-auto">
+                    <div class="embed-responsive embed-responsive-16by9 rounded">
+                        <video class="embed-responsive-item rounded" width="100%" height="100%" loop muted autoplay>
+                            <source src="images/droneview.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- <ul class="nav justify-content-sm-center nav-pills mb-lg-4 mb-3 pb-md-3 pb-2 " id="pills-tab" role="tablist">
+            <li class="nav-item mx-2 mb-2" role="presentation">
+                <button class="btn secondarybg  active" id="pills-home-tab" data-bs-toggle="pill"
+                    data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
+                    aria-selected="true">
+                    <i class="me-2 bi bi-star opacity-50"></i>Economic Analysis
+                </button>
+            </li>
+            <li class="nav-item mx-2 mb-2" role="presentation">
+                <button class="btn" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile"
+                    type="button" role="tab" aria-controls="pills-profile" aria-selected="false">
+                    <i class="me-2 bi bi-suitcase-lg opacity-50"></i>Investments
+                </button>
+            </li>
+            <li class="nav-item mx-2 mb-2" role="presentation">
+                <button class="btn" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact"
+                    type="button" role="tab" aria-controls="pills-contact" aria-selected="false">
+                    <i class="me-2 bi bi-bar-chart-line opacity-50"></i>Corporate Finance
+                </button>
+            </li>
+        </ul>
+        <div class="tab-content" id="pills-tabContent">
+            <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab"
+                tabindex="0">
+                
+            </div>
+            <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab"
+                tabindex="0">...</div>
+            <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab"
+                tabindex="0">...</div>
+        </div> -->
+    </section>
+    <section class="container mb-5 pt-md-2 pt-lg-4 pt-xl-5">
+        <h2 class="h1 my-4 pt-2 text-center fw-bold">The benefits of world-changing drone</h2>
+        <div class="row pb-4">
+            <div class="col-md-3 col-6 order-md-1 order-2">
+                <div class="d-flex flex-column justify-content-between h-100 text-center">
+                    <div class="mt-md-5 mt-4">
+                        <img src="images/battery.svg" alt="" class="d-inline-block mb-4">
+                        <h3 class="h4 fw-bold mb-0 lh-1">
+                            <span class="d-block mb-2 fs-base fw-normal">Flight time</span>
+                            60 min
+                        </h3>
+                    </div>
+                    <div class="mt-md-5 mt-4">
+                        <img src="images/drone.svg" alt="" class="d-inline-block mb-4">
+                        <h3 class="h4 fw-bold mb-0 lh-1">
+                            <span class="d-block mb-2 fs-base fw-normal">Obstacle sensing</span>
+                            5-Direction
+                        </h3>
+                    </div>
+                    <div class="mt-md-5 mt-4">
+                        <img src="images/monitor.svg" alt="" class="d-inline-block mb-4">
+                        <h3 class="h4 fw-bold mb-0 lh-1">
+                            <span class="d-block mb-2 fs-base fw-normal">Ultra-clear video</span>
+                            4K
+                        </h3>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-12 order-md-2 order-1">
+                <div class="d-flex flex-column justify-content-between h-100">
+                    <div class="mx-md-n5 mb-md-n5">
+                        <img src="images/drone.png" alt="" class="img-fluid">
+                    </div>
+                    <div class="row row-cols-2 mt-md-5 mt-4 text-center">
+                        <div class="col">
+                            <img src="images/thermometer.svg" alt="" class="d-inline-block mb-4">
+                            <h3 class="h4 fw-bold mb-0 lh-1">
+                                <span class="d-block mb-2 fs-base fw-normal">Optical camera</span>
+                                2x zoom
+                            </h3>
+                        </div>
+                        <div class="col">
+                            <img src="images/led-light.svg" alt="" class="d-inline-block mb-4">
+                            <h3 class="h4 fw-bold mb-0 lh-1">
+                                <span class="d-block mb-2 fs-base fw-normal">Optical camera</span>
+                                2x zoom
+                            </h3>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="col-md-3 col-6 order-md-3 order-3">
+                <div class="d-flex flex-column justify-content-between h-100 text-center">
+                    <div class="mt-md-5 mt-4">
+                        <img src="images/zoom-in.svg" alt="" class="d-inline-block mb-4">
+                        <h3 class="h4 fw-bold mb-0 lh-1">
+                            <span class="d-block mb-2 fs-base fw-normal">Optical camera</span>
+                            2x zoom
+                        </h3>
+                    </div>
+                    <div class="mt-md-5 mt-4">
+                        <img src="images/computer-microprocessor.svg" alt="" class="d-inline-block mb-4">
+                        <h3 class="h4 fw-bold mb-0 lh-1">
+                            <span class="d-block mb-2 fs-base fw-normal">Sensor</span>
+                            1 inch
+                        </h3>
+                    </div>
+                    <div class="mt-md-5 mt-4">
+                        <img src="images/audio.svg" alt="" class="d-inline-block mb-4">
+                        <h3 class="h4 fw-bold mb-0 lh-1">
+                            <span class="d-block mb-2 fs-base fw-normal">Noise reduction</span>
+                            4dB
+                        </h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="container pb-5 pt-md-2 pt-lg-4 pt-xl-5">
+        <h1 class="mb-4 fw-bold">Specs</h1>
+        <div class="row pb-md-2 pb-lg-4 pb-xl-5 mb-xxl-2">
+            <div class="col-lg-8 col-md-9">
+                <div class="table-responsive border-top mb-0">
+                    <table class="table align-middle">
+                        <tbody>
+                            <tr>
+                                <th scope="row" class="ps-0 h5 fw-bold">
+                                    Weight (Battery & Propellers Included)
+                                </th>
+                                <td class="pe-0">
+                                    <span class="d-inline-block my-4 py-1">
+                                        1400 g
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row" class="ps-0 h5 fw-bold">
+                                    Max Flight Time
+                                </th>
+                                <td class="pe-0">
+                                    <span class="d-inline-block my-4 py-1">
+                                        Approx. 60 minutes
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row" class="ps-0 h5 fw-bold">
+                                    Vision System
+
+                                </th>
+                                <td class="pe-0">
+                                    <span class="d-inline-block my-4 py-1">
+                                        <ul class="list-unstyled mb-0">
+                                            <li>Forward Vision System </li>
+                                            <li>Backward Vision System</li>
+                                            <li>Downward Vision System</li>
+                                        </ul>
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row" class="ps-0 h5 fw-bold">
+                                    Obstacle Sensing
+
+                                </th>
+                                <td class="pe-0">
+                                    <span class="d-inline-block my-4 py-1">
+                                        <ul class="list-unstyled mb-0">
+                                            <li>Front & Rear Obstacle Avoidance</li>
+                                            <li>Left & Right Infrared Obstacle Avoidance</li>
+                                        </ul>
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row" class="ps-0 h5 fw-bold">
+                                    Camera Sensor
+
+                                </th>
+                                <td class="pe-0">
+                                    <span class="d-inline-block my-4 py-1">
+                                        1" CMOS<br>
+                                        Effective pixels: 20 M
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row" class="ps-0 h5 fw-bold">
+                                    Max. Video Recording Resolution
+                                </th>
+                                <td class="pe-0">
+                                    <span class="d-inline-block my-4 py-1">
+                                        4K 60P
+
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row" class="ps-0 h5 fw-bold">
+                                    Max Transmission Distance
+                                </th>
+                                <td class="pe-0">
+                                    <span class="d-inline-block my-4 py-1">
+                                        FCC: 4.3 mi
+
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row" class="ps-0 h5 fw-bold">
+                                    Video Transmission System
+                                </th>
+                                <td class="pe-0">
+                                    <span class="d-inline-block my-4 py-1">
+                                        Lightbridge
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row" class="ps-0 h5 fw-bold">
+                                    Operating Frequency
+                                </th>
+                                <td class="pe-0">
+                                    <span class="d-inline-block my-4 py-1">
+                                        2.4 GHz/5.8 GHz
+
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th scope="row" class="ps-0 h5 fw-bold">
+                                    Weight (Battery & Propellers Included)
+                                </th>
+                                <td class="pe-0">
+                                    <span class="d-inline-block my-4 py-1">
+                                        1400 g
+
+                                    </span>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="col-md-3 offset-lg-1">
+                <div class="row">
+                    <div class="col-6 col-md-12">
+                        <img src="images/01.png" alt="" class="img-fluid">
+                    </div>
+                    <div class="col-6 col-md-12">
+                        <img src="images/02.png" alt="" class="img-fluid">
+                    </div>
+                    <div class="col-6 col-md-12">
+                        <img src="images/03.png" alt="" class="img-fluid">
+                    </div>
+                    <div class="col-6 col-md-12">
+                        <img src="images/04.png" alt="" class="img-fluid">
+                    </div>
+                </div>
+                <!-- <div class="row row-cols-2 row-cols-md-1">
+                    <div class="col"><img src="images/01.png" class="img-fluid h-100 w-100" alt=""></div>
+                    <div class="col"><img src="images/02.png" class="img-fluid h-100 w-100" alt=""></div>
+                    <div class="col"><img src="images/03.png" class="img-fluid h-100 w-100" alt=""></div>
+                    <div class="col"><img src="images/04.png" class="img-fluid h-100 w-100" alt=""></div>
+                </div> -->
+            </div>
+        </div>
+    </section>
+    <section id="cardsection" class="mb-5 py-5 primarybg">
+        <div class="container my-xl-5 my-lg-4 pb-2 py-sm-3 py-md-4">
+            <div class="row my-2 g-3">
+                <div class="col-lg-5 my-auto">
+                    <div class="text-center text-lg-start"">
+                        <h2 class=" h1 mb-4 pb-3 fw-bold">
+                        Two colors. <br>
+                        Choose your best.
+                        </h2>
+                        <p class="mb-4 text-black-50">
+                            “ProDrone 2.0 changes the rules of the game in aerial photography. Now you can capture more
+                            details from a safe distance, as well as implement different visual effects with different
+                            focal lengths.”
+                        </p>
+                        <h5 class="mb-1 fw-semibold">Wade Warren</h5>
+                        <p class="text-black-50">ProDrone Inc. Co-Owner</p>
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="card text-center shadow-sm custom-card">
+                                <div class="card-body p-lg-4">
+                                    <img src="images/card1.png" alt="" class="img-fluid">
+                                    <p class="text-black-50 mb-2">White ProDrone</p>
+                                    <h4 class="fw-bold mb-4">$1200</h4>
+                                    <a href="#" class="btn btn-lg secondarybg fs-6">
+                                        Buy now
+                                        <i class="ms-2 bi bi-cart4"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="card text-center shadow-sm custom-card">
+                                <div class="card-body p-lg-4">
+                                    <img src="images/card2.png" alt="" class="img-fluid">
+                                    <p class="text-black-50 mb-2">Black ProDrone</p>
+                                    <h4 class="fw-bold mb-4">$1200</h4>
+                                    <a href="#" class="btn btn-lg secondarybg fs-6">
+                                        Buy now
+                                        <i class="ms-2 bi bi-cart4"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="footer" class="pt-5 pb-4 pb-lg-5">
+        <div class="container pt-lg-4 text-center text-lg-start">
+            <div class="row gy-5">
+                <div class="col-lg-4">
+                    <h3 class="mb-4 fw-bold">Newsletter</h3>
+                    <p class="text-black-50 mb-4 pb-2">
+                        Please, subscribe to our newsletter to keep updated about our news and
+                        offers.
+                    </p>
+                    <div class="input-group mb-2">
+                        <input type="text" class="form-control shadow-none" placeholder="Your email"
+                            aria-label="Recipient's username" aria-describedby="button-addon2">
+                        <button class="btn secondarybg" type="button" id="button-addon2">Subscribe</button>
+                    </div>
+                </div>
+
+                <div class="col-lg-4">
+                    <h3 class="mb-4 fw-bold">Our office</h3>
+                    <p class="text-black-50 mb-4 pb-2 lh-lg">3517 W. Gray St. Utica,<br>
+                        Pennsylvania 57867 <br>
+                        (406) 555‑0120 <br>
+                        email@example.com</p>
+                </div>
+                <div class="col-lg-4">
+                    <h3 class="mb-4 fw-bold">Payments accepted</h3>
+                    <div class="d-flex flex-row">
+                        <div class="mb-3 ms-3"><a href=""><img src="images/mastercard.png" alt=""
+                                    class="img-fluid secondarybg rounded"></a></div>
+                        <div class="mb-3 ms-3"><a href=""><img src="images/paypal.png" alt=""
+                                    class="img-fluid secondarybg rounded"></a></div>
+                        <div class="mb-3 ms-3"><a href=""><img src="images/visa.png" alt=""
+                                    class="img-fluid secondarybg rounded"></a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <button class="btn bg-dark-subtle rounded-2 shadow-lg btn-scroll-to-top" id="scrollToTopBtn" title="Go to top">
+        <i class="bi bi-chevron-double-up"></i>
+    </button>
+
+</body>
+
+</html>
